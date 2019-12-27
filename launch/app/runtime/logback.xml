@@ -38,7 +38,22 @@
     <appender-ref ref="STDOUT" />
   </root>
 
-  <logger name="org.eclipse.smarthome" level="INFO" />
-  <logger name="org.openhab.core" level="INFO" />
+  <logger name="org.openhab.core" level="WARN" /> 
+  <logger name="org.openhab.internal.events" level="WARN" /> 
+   <logger name="org.openhab.io.homekit" level="WARN" />
+  <logger name="org.eclipse.jetty" level="WARN" />
+  <logger name="javax.jmdns" level="WARN" />
+  
+  
+  
+<!--  <logger name="org.eclipse.jetty.util.thread" level="WARN" />
+  <logger name="org.eclipse.jetty.io.ManagedSelector" level="WARN" />
+  <logger name="org.eclipse.jetty.io.ChannelEndPoint" level="WARN" />
+  <logger name="org.eclipse.jetty.server.session" level="WARN" /> -->
+  
+  
+  
+ 
+ 
 
 </configuration>
