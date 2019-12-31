@@ -38,9 +38,9 @@
     <appender-ref ref="STDOUT" />
   </root>
 
-  <logger name="org.openhab.core" level="WARN" /> 
-  <logger name="org.openhab.internal.events" level="WARN" /> 
-   <logger name="org.openhab.io.homekit" level="WARN" />
+  <logger name="org.openhab.core" level="INFO" /> 
+  <logger name="org.openhab.internal.events" level="INFO" /> 
+   <logger name="org.openhab.io.homekit" level="INFO" />
   <logger name="org.eclipse.jetty" level="WARN" />
   <logger name="javax.jmdns" level="WARN" />
   
