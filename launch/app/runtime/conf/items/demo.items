@@ -12,5 +12,6 @@ Number DemoNumber
 Image DemoImage
 
 Color MagicColor { channel="magic:color-light:magicColor:color" }
-Switch MagicOnOff { channel="magic:onoff-light:magicOnOff:switch" }
+Switch MagicOnOff [ "Lighting" ] { channel="magic:onoff-light:magicOnOff:switch" }
+Switch MagicOnOff2 [ "Lighting" ] { channel="magic:onoff-light:magicOnOff2:switch" }
 Dimmer MagicDimmer { channel="magic:dimmable-light:magicDimmer:brightness" }

@@ -1,3 +1,2 @@
-magic:color-light:magicColor
-magic:onoff-light:magicOnOff
-magic:dimmable-light:magicDimmer
+magic:onoff-light:magicOnOff "Label" @ "Location"
+magic:color-light:magicColor "Label2" @ "Location2"

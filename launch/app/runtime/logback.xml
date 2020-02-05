@@ -38,6 +38,18 @@
     <appender-ref ref="STDOUT" />
   </root>
 
-  <logger name="org.openhab.core" level="INFO" />
+  <logger name="org.eclipse.smarthome" level="WARN" />
+  <logger name="org.openhab.core" level="WARN" />
+  <logger name="org.openhab.core.net" level="WARN" />
+  
+  <logger name="org.openhab.io.homekit" level="DEBUG" />
+  <logger name="org.eclipse.jetty" level="WARN" />
+
+  
+  <logger name="javax.jmdns" level="INFO" />
+  
+  <logger name="io.netty" level="WARN" />
+  <logger name="org.eclipse.jetty.server.RequestLog" level="INFO" />
+ 
 
 </configuration>
