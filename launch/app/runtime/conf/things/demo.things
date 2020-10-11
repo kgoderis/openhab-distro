@@ -1,2 +1,2 @@
-magic:onoff-light:magicOnOff "Label" @ "Location"
-magic:color-light:magicColor "Label2" @ "Location2"
+#magic:onoff-light:magicOnOff "Label" @ "Location"
+#magic:color-light:magicColor "Label2" @ "Location2"

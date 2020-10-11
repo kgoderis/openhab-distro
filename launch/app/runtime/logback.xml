@@ -5,6 +5,13 @@
     <encoder>
       <pattern>%d{HH:mm:ss.SSS} [%.15thread] %-5level %logger{36}:%line - %msg%n</pattern>
     </encoder>
+<!--      <filter class="ch.qos.logback.core.filter.EvaluatorFilter">      
+        <evaluator class="ch.qos.logback.classic.boolex.JaninoEventEvaluator">
+            <expression>return message.toLowerCase().contains("- bundle");</expression>
+        </evaluator>
+        <OnMismatch>ACCEPT</OnMismatch>
+        <OnMatch>DENY</OnMatch>
+    </filter> -->
   </appender>
 
   <!-- http://felix.apache.org/documentation/subprojects/apache-felix-logback.html -->
@@ -41,15 +48,21 @@
   <logger name="org.eclipse.smarthome" level="WARN" />
   <logger name="org.openhab.core" level="WARN" />
   <logger name="org.openhab.core.net" level="WARN" />
+<!--     <logger name="org.openhab.core.config.discovery.mdns" level="TRACE" />
+  <logger name="javax.jmdns" level="INFO" /> -->
   
-  <logger name="org.openhab.io.homekit" level="DEBUG" />
-  <logger name="org.eclipse.jetty" level="WARN" />
-
+  <logger name="org.openhab.io.homekit" level="INFO" />
+  <logger name="org.openhab.io.homekit.client" level="TRACE" />
+<!--   <logger name="org.openhab.io.homekit.internal.http.jetty" level="TRACE" />
+ --><!--   <logger name="org.openhab.io.homekit.crypto" level="TRACE" />
+ -->  
   
-  <logger name="javax.jmdns" level="INFO" />
   
+    <logger name="org.openhab.io.homekit.util" level="TRACE" />
+<!--   <logger name="org.eclipse.jetty" level="DEBUG" />
+ -->
   <logger name="io.netty" level="WARN" />
-  <logger name="org.eclipse.jetty.server.RequestLog" level="INFO" />
- 
+<!--   <logger name="org.eclipse.jetty.server.RequestLog" level="WARN" />
+ --> 
 
 </configuration>
